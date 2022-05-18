@@ -308,3 +308,60 @@ main img:first-of-type {
 input {
     margin-left: 20px;
 }
+
+.player-card {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* display: none; */
+}
+
+.player-image {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.player-image img {
+    width: 400px;
+    height: 400px;
+}
+
+.player-information {
+    margin-right: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.player-information h1 {
+    font-family: Pacifico;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.right-arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.right-arrow img {
+    width: 50px;
+    height: 50px;
+}
+
+#magnus {
+    transition: 0.1s linear;
+}
+
+#garry {
+    display: none;
+}
+
+#capablanca {
+    display: none;
+}

@@ -68,3 +68,62 @@ submenu.addEventListener("mouseover", () => {
 submenu.addEventListener("mouseleave", () => {
     submenu.style.display = 'none';
 })
+
+function validate() {
+    let phoneNumber = document.getElementById('phone-number').value;
+    // regex ce valideaza numerele de telefon incepand cu 07, apoi ceva din {2, ..., 8} si apoi 7 cifre
+    let phoneREGEX = /^[0][7][2-8]([0-9]{7})$/;
+    let phoneResult = phoneREGEX.test(phoneNumber);
+    if (!phoneResult) {
+        alert("invalid phone number!");
+        return false;
+    }
+
+    // ?`mF$?tcn2)`>9E]
+    let password = document.getElementById('pass').value;
+    let passREGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+    let passResult = passREGEX.test(password);
+    if (!passResult) {
+        alert("invalid password! should contain 1 lowercase, 1 uppercase, 1 special, 1 numeric, at least 8 in length!");
+        return false;
+    }
+
+    let birthday = document.getElementById('birthday').value;
+    alert(birthday.toString());
+
+    let password2 = document.getElementById('pass2').value;
+    if (password != password2) {
+        alert("passwords don't match!");
+        return false;
+    }
+
+    let chessELO = document.getElementById('elo').value;
+    if (chessELO < 600 || chessELO > 3000) {
+        alert("elo should be between 600 and 3000");
+        return false;
+    }
+}
+
+let arrows = document.getElementsByClassName('right-arrow');
+let players = document.getElementsByClassName('player-card');
+// console.log(arrows.length)
+// console.log(players.length)
+let idxHide = 0;
+
+arrows[0].addEventListener('click', hidePlayer);
+arrows[1].addEventListener('click', hidePlayer);
+arrows[2].addEventListener('click', hidePlayer);
+
+function hidePlayer() {
+
+    // players[idxHide].style.transform = 'translate(-300%, 0)';
+    // setTimeout(function () {
+
+    // }, 5000);
+    players[idxHide].style.display = 'none';
+    players[(idxHide + 1) % 3].style.display = 'flex';
+    idxHide += 1;
+    idxHide %= 3;
+}
+
+// transitionPlayers();
