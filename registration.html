@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <title>FEEDBACK FORM</title>
+</head>
+
+<body style="background-image: linear-gradient(#BBD2C5,
+#536976)">
+    <header style="background-image: none;">
+        <nav>
+            <div class="logo-wrapper">
+                <a href="index.html"><img id="logo" src="logo.png" alt="LOGO"></a>
+            </div>
+            <div class="links" id="linksNavigation">
+                <!-- icon for closing the menu (small screens) -->
+                <img src="close-menu-icon.png" id="close-menu" alt="close menu">
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="#">GREAT PLAYERS</a></li>
+                    <li><a href="#" id="resources">RESOURCES</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="https://lichess.org/learn#/" target="_blank">LEARN</a></li>
+                                <li><a href="https://www.youtube.com/c/HangingPawns/featured"
+                                        target="_blank">OPENINGS</a>
+                                </li>
+                                <li><a href="https://thechessworld.com/articles/middle-game/7-most-important-middlegame-principles/"
+                                        target="_blank">MIDDLEGAMES</a></li>
+                                <li><a href="https://lichess.org/study/topic/Endgame/hot" target="_blank">ENDGAMES</a>
+                                </li>
+                                <li><a href="https://blitztactics.com/" target="_blank">TACTICS</a></li>
+                                <li><a href="https://lichess.org/" target="_blank">LICHESS</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                </ul>
+            </div>
+            <!-- icon for opening the menu (small screens) -->
+            <img src="menu-icon.png" id="menu" alt="menu">
+        </nav>
+
+        <div id="feedback-form">
+            <h1 id="form-title">Registration Form</h1>
+            <form>
+                <div class="form-query">
+                    <p>Name:</p>
+                    <input type="text" value="John Doe" name="text" />
+                </div>
+
+                <div class="form-query">
+                    <p>Email:</p>
+                    <input type="email" placeholder="youremail@example.com" name="email" required />
+                </div>
+
+                <div class="form-query">
+                    <p>Birthday:</p>
+                    <input type="date" value="2022-05-19" />
+                </div>
+
+                <div class="form-query">
+                    <p>Chess ELO:</p>
+                    <input type="number" value="1500" />
+                </div>
+
+                <div class="form-query">
+                    <p>Password:</p>
+                    <input type="password" value="password123" />
+                </div>
+
+                <div class="form-query">
+                    <p>Confirm password:</p>
+                    <input type="password" value="password123" />
+                </div>
+
+                <div class="form-query">
+                    <input type="reset" />
+                    <input type="submit" />
+                </div>
+            </form>
+        </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>PROIECT TW 2022</p>
+        <p>GRIGORE MIHAI-CATALIN</p>
+        <p>GRUPA 142</p>
+    </footer>
+</body>
+
+</html>
