@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
-    <title>FEEDBACK FORM</title>
+    <title>REGISTRATION FORM</title>
 </head>
 
 <body style="background-image: linear-gradient(#BBD2C5,
@@ -24,8 +24,7 @@
 
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">HISTORY</a></li>
-                    <li><a href="#">GREAT PLAYERS</a></li>
+                    <li><a href="great-players.html">GREAT PLAYERS</a></li>
                     <li><a href="#" id="resources">RESOURCES</a>
                         <div class="submenu">
                             <ul>
@@ -63,28 +62,33 @@
                 </div>
 
                 <div class="form-query">
+                    <p>Phone Number:</p>
+                    <input type="tel" placeholder="07..." id="phone-number" />
+                </div>
+
+                <div class="form-query">
                     <p>Birthday:</p>
-                    <input type="date" value="2022-05-19" />
+                    <input type="date" value="2022-05-26" id="birthday" />
                 </div>
 
                 <div class="form-query">
                     <p>Chess ELO:</p>
-                    <input type="number" value="1500" />
+                    <input type="number" value="1500" id="elo" />
                 </div>
 
                 <div class="form-query">
                     <p>Password:</p>
-                    <input type="password" value="password123" />
+                    <input type="password" value="password123" id="pass" />
                 </div>
 
                 <div class="form-query">
                     <p>Confirm password:</p>
-                    <input type="password" value="password123" />
+                    <input type="password" value="password123" id="pass2" />
                 </div>
 
                 <div class="form-query">
                     <input type="reset" />
-                    <input type="submit" />
+                    <input type="submit" onclick="validate()" />
                 </div>
             </form>
         </div>
@@ -96,6 +100,8 @@
         <p>GRIGORE MIHAI-CATALIN</p>
         <p>GRUPA 142</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
